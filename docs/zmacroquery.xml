@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fpdoc-descriptions><package name="zeos_ex"><module name="ZMacroQuery"><short>Модуль содержит расширеный компонент TZMacroQuery</short><descr>Модуль содержит расширеный компонент TZMacroQuery
+
+TZMacroQuery, в дополнение к TZQuery поддерживает работу с макросами</descr><element name="TZMacroQuery"><short>TZMacroQuery - расширение функционала компонента TZQuery</short><descr>
+
+TZMacroQuery, в дополнение к TZQuery поддерживает работу с макросами</descr>
+      </element><element name="TZMacroQuery.CloseOpen"><short>Закрывает и открывает набор данных</short>
+      </element>
+    <element name="DefaultQueryMacroChar"><short>Символ по умолчанию для обозначения макроса в запросе</short>
+      </element><element name="DefaultQueryMacroExprConst"><short>Значение макроса по умолчанию</short>
+      </element><element name="TZMacroQuery.ExecSQL"><short>Выполнить запрос к БД</short><descr>Метод подготавливает текст запроса в соответсвии со значениями макросов и выполняет запрос к БД</descr>
+      </element><element name="TZMacroQuery.ExpandMacros"><short>Метод подготавливает текст запроса в соответсвии с макросами</short>
+      </element><element name="TZMacroQuery.MacroByName"><short>Метод возвращает указанный макрос из запроса</short>
+      </element><element name="TZMacroQuery.Macros"><short>Массив макросов в запросе</short>
+      </element><element name="TZMacroQuery.MacroChar"><short>Символ макроса в запросе</short>
+      </element><element name="TZMacroQuery.MacroCount"><short>Кол-во макросов в запросе</short>
+      </element><element name="TZMacroQuery.SQL"><short>Текст запроса</short>
+      </element><element name="TZMacroQuery.MacroExprDef"><short>Значение макроса по умолчанию</short>
+      </element><element name="CreateParamsFromSQL"><short>Процедура создаёт массив параметров из текста запроса в соответсвии с символом параметра</short>
+      </element>
+    </module>
+  </package>
+</fpdoc-descriptions>

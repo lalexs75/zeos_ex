@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fpdoc-descriptions><package name="zeos_lr_ex"><module name="lrZeosMacroQueryUnit"><short>Модуль содержит запрос с макросами на основе ZEOS для LazReport</short><element name="TLRZMacroQuery"><short>Компонент - Запрос с макросом</short>
+      </element><element name="TLRZMacroQuery.SQL"><short>Текст запроса</short>
+      </element><element name="TLRZMacroQuery.Database"><short>База данных</short>
+      </element><element name="TLRZMacroQuery.Params"><short>Параметры запроса</short>
+      </element><element name="TLRZMacroQuery.MacroChar"><short>Символ макроса в запросе</short>
+      </element><element name="TLRZMacroQuery.MacroCount"><short>Кол-во макросов в запросе</short>
+      </element><element name="TLRZMacroQueryReg"><short>Фиктивный компонент для регистрации в IDE Lazarus</short>
+      </element>
+    </module>
+  </package>
+</fpdoc-descriptions>

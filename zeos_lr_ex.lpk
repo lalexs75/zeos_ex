@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <Name Value="zeos_lr_ex"/>
+    <Type Value="RunAndDesignTime"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="."/>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Version Major="1" Release="1" Build="1"/>
+    <Files Count="1">
+      <Item1>
+        <Filename Value="lrzeosmacroqueryunit.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="lrZeosMacroQueryUnit"/>
+      </Item1>
+    </Files>
+    <LazDoc Paths="docs;/usr/local/share/lazarus/components/zeos_ex/docs"/>
+    <RequiredPkgs Count="5">
+      <Item1>
+        <PackageName Value="LR_ZeosDB"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="lazreport"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="zeos_ex"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="LCL"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="FCL"/>
+      </Item5>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

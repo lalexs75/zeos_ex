@@ -1,0 +1,106 @@
+object Form1: TForm1
+  Left = 311
+  Height = 595
+  Top = 120
+  Width = 785
+  Caption = 'Test Zeos query with macros'
+  ClientHeight = 595
+  ClientWidth = 785
+  OnCreate = FormCreate
+  LCLVersion = '0.9.31'
+  object Button1: TButton
+    AnchorSideTop.Control = Edit1
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 690
+    Height = 29
+    Top = 29
+    Width = 89
+    Anchors = [akTop, akRight]
+    AutoSize = True
+    BorderSpacing.Right = 6
+    Caption = 'Find objects'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    AnchorSideLeft.Control = Label1
+    AnchorSideTop.Control = Label1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Button1
+    Left = 12
+    Height = 27
+    Top = 30
+    Width = 672
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Around = 6
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 6
+    Height = 18
+    Top = 6
+    Width = 154
+    BorderSpacing.Around = 6
+    Caption = 'Enter object class letter'
+    ParentColor = False
+  end
+  object DBGrid1: TDBGrid
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Edit1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 6
+    Height = 526
+    Top = 63
+    Width = 773
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Around = 6
+    Color = clWindow
+    Columns = <>
+    DataSource = Datasource1
+    TabOrder = 2
+    TitleStyle = tsNative
+  end
+  object ZMacroQuery1: TZMacroQuery
+    Connection = ZConnection1
+    SQL.Strings = (
+      'select'
+      '  pg_class.oid,'
+      '  cast(pg_class.relkind as varchar(5)) as relkind,'
+      '  pg_class.relname'
+      'from'
+      '  pg_class'
+      ''
+      '%Macro1'
+    )
+    Macros = <    
+      item
+        DataType = ftString
+        Name = 'Macro1'
+        ParamType = ptInput
+      end>
+    left = 201
+    top = 264
+  end
+  object Datasource1: TDatasource
+    DataSet = ZMacroQuery1
+    left = 161
+    top = 264
+  end
+  object ZConnection1: TZConnection
+    DesignConnection = True
+    Protocol = 'postgresql-8'
+    HostName = '127.0.0.1'
+    Database = 'postgres'
+    User = 'postgres'
+    left = 56
+    top = 264
+  end
+end
