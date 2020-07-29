@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
-  <Package Version="4">
+  <Package Version="5">
     <Name Value="zeos_lr_ex"/>
     <Type Value="RunAndDesignTime"/>
+    <Author Value="Lagunov A.A."/>
     <CompilerOptions>
       <Version Value="11"/>
       <SearchPaths>
-        <OtherUnitFiles Value="."/>
-        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+        <OtherUnitFiles Value="lrzeosmacros"/>
+        <UnitOutputDirectory Value="lib/zeos_lr_ex/$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
     </CompilerOptions>
-    <Version Major="1" Release="1" Build="1"/>
+    <Description Value="LazReport dataset component"/>
+    <License Value="LGPL2"/>
+    <Version Major="1" Release="3" Build="4"/>
     <Files Count="1">
       <Item1>
-        <Filename Value="lrzeosmacroqueryunit.pas"/>
+        <Filename Value="lrzeosmacros/lrzeosmacroqueryunit.pas"/>
         <HasRegisterProc Value="True"/>
+        <AddToUsesPkgSection Value="False"/>
         <UnitName Value="lrZeosMacroQueryUnit"/>
       </Item1>
     </Files>
+    <CompatibilityMode Value="True"/>
     <LazDoc Paths="docs;/usr/local/share/lazarus/components/zeos_ex/docs"/>
     <RequiredPkgs Count="5">
       <Item1>

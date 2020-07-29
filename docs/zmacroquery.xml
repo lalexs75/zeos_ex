@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fpdoc-descriptions><package name="zeos_ex"><module name="ZMacroQuery"><short>Модуль содержит расширеный компонент TZMacroQuery</short><descr>Модуль содержит расширеный компонент TZMacroQuery
 
-TZMacroQuery, в дополнение к TZQuery поддерживает работу с макросами</descr><element name="TZMacroQuery"><short>TZMacroQuery - расширение функционала компонента TZQuery</short><descr>
-
-TZMacroQuery, в дополнение к TZQuery поддерживает работу с макросами</descr>
+TZMacroQuery, в дополнение к TZQuery поддерживает работу с макросами</descr><element name="TZMacroQuery"><short>TZMacroQuery - расширение функционала компонента TZQuery</short><descr>TZMacroQuery, в дополнение к TZQuery поддерживает работу с макросами
+</descr>
       </element><element name="TZMacroQuery.CloseOpen"><short>Закрывает и открывает набор данных</short>
       </element>
     <element name="DefaultQueryMacroChar"><short>Символ по умолчанию для обозначения макроса в запросе</short>

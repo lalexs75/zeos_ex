@@ -44,7 +44,7 @@ type
   TLRZMacroQuery = class(TLRDataSetControl)
   private
     FDatabase: string;
-    FMacroChar: Char;
+    //FMacroChar: Char;
     FParams: TQueryParamList;
     FSaveSQL:string;
     function GetMacroChar: Char;

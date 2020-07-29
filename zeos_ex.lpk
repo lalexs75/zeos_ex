@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
-  <Package Version="4">
+  <Package Version="5">
     <Name Value="zeos_ex"/>
     <Type Value="RunAndDesignTime"/>
     <AddToProjectUsesSection Value="True"/>
     <CompilerOptions>
       <Version Value="11"/>
       <SearchPaths>
-        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+        <OtherUnitFiles Value="zeosmacros"/>
+        <UnitOutputDirectory Value="lib/zeos_ex/$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
     </CompilerOptions>
-    <Version Major="1"/>
+    <Version Major="1" Minor="1" Build="1"/>
     <Files Count="2">
       <Item1>
-        <Filename Value="Z.inc"/>
+        <Filename Value="zeosmacros/Z.inc"/>
         <Type Value="Include"/>
       </Item1>
       <Item2>
-        <Filename Value="ZMacroQuery.pas"/>
+        <Filename Value="zeosmacros/ZMacroQuery.pas"/>
         <HasRegisterProc Value="True"/>
+        <AddToUsesPkgSection Value="False"/>
         <UnitName Value="ZMacroQuery"/>
       </Item2>
     </Files>
+    <CompatibilityMode Value="True"/>
     <LazDoc Paths="docs;/usr/local/share/lazarus/components/zeos_ex/docs"/>
     <RequiredPkgs Count="2">
       <Item1>
