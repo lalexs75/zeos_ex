@@ -144,6 +144,8 @@ var
   P:TQueryParam;
   V:Variant;
 begin
+  if csDestroying in OwnerPage.Report.ComponentState then Exit;
+
   Q:=TZMacroQuery(DataSet);
   SaveView := CurView;
   SavePage := CurPage;
