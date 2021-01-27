@@ -202,6 +202,7 @@ end;
 
 procedure TZMacroQuery.QueryChanged(Sender: TObject);
 begin
+  if csLoading in ComponentState then Exit;
   FSaveQueryChanged(Sender);
 // to exclude recursion
   if not FMacrosExpanding then SQL := inherited SQL;
