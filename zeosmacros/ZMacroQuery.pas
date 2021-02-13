@@ -119,7 +119,7 @@ begin
   FMacroChar := DefaultQueryMacroChar;
 
   FSaveQueryChanged := TStringList(inherited SQL).OnChange;
-  TStringList(inherited SQL).OnChange := {$IFDEF FPC}@{$ENDIF}QueryChanged;
+//  TStringList(inherited SQL).OnChange := {$IFDEF FPC}@{$ENDIF}QueryChanged;
 
   FSQLPattern := TStringList.Create;
   TStringList(FSQLPattern).OnChange := {$IFDEF FPC}@{$ENDIF}PatternChanged;
@@ -205,7 +205,7 @@ begin
   if csLoading in ComponentState then Exit;
   FSaveQueryChanged(Sender);
 // to exclude recursion
-  if not FMacrosExpanding then SQL := inherited SQL;
+//  if not FMacrosExpanding then SQL := inherited SQL;
 end;
 
 procedure TZMacroQuery.PatternChanged(Sender: TObject);
